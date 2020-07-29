@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  background-color: #867890;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  width: 100%;
+  z-index: 1;
+}
+
+
+#header-img {
+  align-self: center;
+  width: 100%;
+}
+
+nav {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+#nav-bar {
+  justify-self: right;
+  align-self: center;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#nav-bar li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 750px;
+  position: relative;
+  top: 100px; 
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ #intro h2 {
+  margin-bottom: 20px;
+}
+
+.discount-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+input[type="email"] {
+  max-width: 500px;
+  width: 100%;
+  height: 25px;
+}
+
+input[type="submit"] {
+  max-width: 120px;
+  width: 100%;
+  height: 20px;
+  background-color: pink;
+  border: 1px;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: -3px;
+}
+
+input[type="submit"]:hover {
+  background-color: #FF69B4;
+}
+
+#features {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+}
+
+.icon-feature > i {
+  font-size: 72px;
+  position: relative;
+  left: 100px;
+}
+
+.feature-img {
+  width: 30%;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 25px;
+}
+
+#description {
+  margin-left: -60px;
+}
+
+
+
+#how-it-works {
+  margin: auto;
+  max-width: 640px;
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+}
+
+iframe {
+  max-width: 100%;
+  min-width: 32rem;
+  min-height: 20rem;
+  height: auto;
+  border: 1px solid hsl(25, 100%, 10%);
+  border-radius: 4px;
+}
+
+#pricing-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 6px;
+  padding: 10px;
+  width: 250px;
+}
+
+.product-name {
+  margin-top: 10px;
+}
+
+#product-name h2 {
+  text-align: center;   
+}
+
+.product-price {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.product-description {
+  list-style: none;
+}
+
+#button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 6px;
+  height: 40px;
+  width: 100px;
+  border: 0px;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #867890;
+  animation-name: background-color;
+  animation-duration: 150ms;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  background-color: #ccc;
+  display: block;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-top: 150px;
+}
+
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 5px;
+  margin-right: 7px;
+}
+
+footer p {
+  font-size: 85%;
+  color: gray;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media(max-width: 600px) {
+  body {
+    font-size: 80%;
+  }
+  header {
+    grid-template-columns: 250px 1fr;
+  }
+  main {
+    top: 50px;
+  }
+ 
+  #nav-bar {
+    flex-direction: column;
+  }
+  .nav-link {
+    margin: 2px;
+  }
+  
+  .feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .feature-img {
+    display: none;
+  }
+  
+  #products {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .product-section { 
+    margin-top: 10px;
+  }
+  
+  footer {
+    margin-top: 65px; 
+  }
+}
+
+@media(max-width: 450px) {
+  body {
+    font-size: 70%;
+  }
+  header {
+    grid-template-columns: 200px 1fr;
+  }
+}
